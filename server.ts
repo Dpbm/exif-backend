@@ -15,4 +15,4 @@ app.use(helmet());
 app.use(limiter);
 app.use(routes);
 
-app.listen(3333, () => { console.log('\x1b[36m🏃‍♂️running server🏃‍♂️'); })
+app.listen(process.env.PORT || 3333, () => { console.log('\x1b[36m🏃‍♂️running server🏃‍♂️'); })
